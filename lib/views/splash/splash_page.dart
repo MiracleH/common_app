@@ -36,7 +36,7 @@ class _SplashPageState extends State<SplashPage> {
         color: Color.fromRGBO(0, 10, 24, 1),
         image: DecorationImage(
           // 注意：启动页 别搞太大 以免加载慢
-          image: AssetImage(Constant.assetsImagesTabbar + 'yaoqing.png'),
+          image: AssetImage(Constant.assetsImagesTabbar + 'yaoqing.jpg'),
           fit: BoxFit.cover,
         ),
       ),
