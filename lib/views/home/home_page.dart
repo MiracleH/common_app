@@ -35,16 +35,16 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   static List tabData = [
     _TabBarItem('item1', 
-        Constant.assetsImagesTabbar + 'feic',
+        Constant.assetsImagesTabbar + 'feic.png',
         Constant.assetsImagesTabbar + 'feicx.png'),
     _TabBarItem('item2',
-        Constant.assetsImagesTabbar + 'feic',
+        Constant.assetsImagesTabbar + 'feic.png',
         Constant.assetsImagesTabbar + 'feicx.png'),
     _TabBarItem('item3',
-        Constant.assetsImagesTabbar + 'feic',
+        Constant.assetsImagesTabbar + 'feic.png',
         Constant.assetsImagesTabbar + 'feicx.png'),
     _TabBarItem('item4', 
-        Constant.assetsImagesTabbar + 'feic',
+        Constant.assetsImagesTabbar + 'feic.png',
         Constant.assetsImagesTabbar + 'feicx.png'),
   ];
 
@@ -60,8 +60,8 @@ class _HomePageState extends State<HomePage> {
       final item = tabData[i];
       myTabs.add(
         BottomNavigationBarItem(
-          icon: item.image,
-          activeIcon: item.selectedImage,
+          icon: Image.asset(item.image),
+          activeIcon: Image.asset(item.selectedImage),
           title: Text(
             item.title,
             textScaleFactor: 1.0,
